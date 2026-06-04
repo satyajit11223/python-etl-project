@@ -1,12 +1,10 @@
-# python-etl-project
-ETL pipeline using Python and Pandas
-# Insurance ETL Project
+# Insurance Data Preprocessing ETL Project
 
-This project performs ETL (Extract, Transform, Load) operations on insurance data using Python and Pandas.
+This project performs ETL (Extract, Transform, Load) and data preprocessing operations on insurance data using Python.
 
 ## Project Objective
 
-The goal of this project is to clean, preprocess, and transform raw insurance data for analysis and reporting.
+The objective of this project is to clean, preprocess, and transform raw insurance data for machine learning and analytical purposes.
 
 ## Technologies Used
 
@@ -14,8 +12,9 @@ The goal of this project is to clean, preprocess, and transform raw insurance da
 * Pandas
 * NumPy
 * Scikit-learn
+* Jupyter Notebook
 
-## ETL Process
+## ETL & Data Preprocessing Steps
 
 ### Extract
 
@@ -24,38 +23,61 @@ The goal of this project is to clean, preprocess, and transform raw insurance da
 ### Transform
 
 * Handled missing values using `SimpleImputer`
-* Cleaned duplicate records
+* Removed duplicate records
 * Processed categorical and numerical variables
-* Prepared data for analysis
+* Applied feature binning using `KBinsDiscretizer`
+* Prepared dataset for machine learning models
 
 ### Load
 
-* Exported cleaned dataset for further analysis
+* Exported cleaned and transformed data for analysis
 
-## Files Included
+## Project Files
 
-* `etl.py` → Main ETL script
-* `insurance_data.csv` → Input dataset
+```text id="mjlwmj"
+python-etl-project/
+│
+├── Data Preprocessing.ipynb
+├── Data_Dictionary_Insurance.xlsx
+├── Insurance.csv
+├── requirements.txt
+├── README.md
+```
+
+## File Description
+
+* `Data Preprocessing.ipynb` → Jupyter notebook containing ETL and preprocessing steps
+* `Data_Dictionary_Insurance.xlsx` → Description of dataset variables and columns
+* `Insurance.csv` → Raw insurance dataset
 * `requirements.txt` → Required Python libraries
+* `README.md` → Project documentation
 
-## How to Run
+## How to Run the Project
 
 Install dependencies:
 
-```bash id="ru6lpo"
+```bash id="ldwrkr"
 pip install -r requirements.txt
 ```
 
-Run the ETL pipeline:
+Open Jupyter Notebook:
 
-```bash id="b3m9dz"
-python etl.py
+```bash id="m8j0lm"
+jupyter notebook
+```
+
+Run:
+
+```text id="fjlwmg"
+Data Preprocessing.ipynb
 ```
 
 ## Skills Demonstrated
 
-* Data Cleaning
 * ETL Pipeline Development
+* Data Cleaning
 * Data Preprocessing
+* Feature Engineering
+* Machine Learning Data Preparation
 * Python Programming
-* Pandas & NumPy
+* Pandas & Scikit-learn
